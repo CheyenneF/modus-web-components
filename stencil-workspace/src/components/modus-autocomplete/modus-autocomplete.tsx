@@ -301,7 +301,6 @@ export class ModusAutocomplete {
                 return (
                   <li
                     class="text-option"
-                    tabindex="0"
                     onClick={() => this.handleOptionClick(option)}
                     onKeyPress={(ev) => this.handleOptionKeyPress(ev, option)}>
                     {option.value}
@@ -312,7 +311,6 @@ export class ModusAutocomplete {
               this.visibleCustomOptions?.map((option) => (
                 <li
                   class="custom-option"
-                  tabindex="0"
                   onClick={() => this.handleCustomOptionClick(option)}
                   onKeyPress={(ev) => this.handleOptionKeyPress(ev, option, true)}
                   innerHTML={option.outerHTML}
